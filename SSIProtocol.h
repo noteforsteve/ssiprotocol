@@ -3,27 +3,27 @@
 
 typedef enum
 {
-	SSI_MIN_PACKET                  = 4,
-	SSI_MAX_PAYLOAD                 = 253,
-	SSI_MAX_PACKET                  = 257,
+    SSI_MIN_PACKET                  = 4,
+    SSI_MAX_PAYLOAD                 = 253,
+    SSI_MAX_PACKET                  = 257,
 
-    SSI_SOURCE_HOST			        = 0x04,
-    SSI_SOURCE_DEVICE				= 0x00,
+    SSI_SOURCE_HOST                 = 0x04,
+    SSI_SOURCE_DEVICE               = 0x00,
 
-    SSI_STATUS_NO_RETRANSMIT		= 0x00,
-    SSI_STATUS_RETRANSMIT			= 0x01,
-    SSI_STATUS_TEMPORARY			= 0x00,
-    SSI_STATUS_PERMANENT			= 0x08,
+    SSI_STATUS_NO_RETRANSMIT	    = 0x00,
+    SSI_STATUS_RETRANSMIT	    = 0x01,
+    SSI_STATUS_TEMPORARY	    = 0x00,
+    SSI_STATUS_PERMANENT            = 0x08,
 	
-	SSI_OPCODE_ACK	                = 0xD0,
-	SSI_OPCODE_NAK	                = 0xD1,
+    SSI_OPCODE_ACK	            = 0xD0,
+    SSI_OPCODE_NAK	            = 0xD1,
 
-    SSI_OPCODE_PARAM_SEND		    = 0xC6,
+    SSI_OPCODE_PARAM_SEND           = 0xC6,
     SSI_OPCODE_PARAM_REQUEST	    = 0xC7,
     SSI_OPCODE_PARAM_DEFAULTS	    = 0xC8,
     SSI_OPCODE_START_DECODE         = 0xE4,
-    SSI_OPCODE_STOP_DECODE	        = 0xE5,
-    SSI_OPCODE_DECODE_DATA	        = 0xF3,
+    SSI_OPCODE_STOP_DECODE	    = 0xE5,
+    SSI_OPCODE_DECODE_DATA	    = 0xF3,
     SSI_OPCODE_SLEEP	            = 0xEB,
 
     SSI_OPCODE_REQUEST_REVISION	    = 0xA3,
