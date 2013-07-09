@@ -17,9 +17,9 @@
 #define IN		/* Parameter is an input 				*/
 #define IO		/* Parameter is both input and output 	*/
 #define OUT		/* Parameter is strictly an output		*/
-#define ORPHAN 	/* Parameter is orphaned to the caller 	*/
-#define ADOPT  	/* Callee adopts the parameter 			*/
-#define OPTIONAL /* The out parameter is optional       */
+#define ORPHAN 		/* Parameter is orphaned to the caller 	*/
+#define ADOPT  		/* Callee adopts the parameter 			*/
+#define OPTIONAL 	/* The out parameter is optional       */
 
 /* Useful 16 bit value macros */
 #define WORD_LOW_HALF(w)		(((uint16_t)(w) >> 0)& 0x00FF)
@@ -34,8 +34,8 @@
 #endif
 
 /* Useful 32 bit value macros */
-#define DWORD_LOW_HALF(l)		(((uint32_t)(l) >>  0) & 0x0000FFFF) 
-#define DWORD_HIGH_HALF(l)		(((uint32_t)(l) >> 16) & 0x0000FFFF)
+#define DWORD_LOW_HALF(l)	   (((uint32_t)(l) >>  0) & 0x0000FFFF) 
+#define DWORD_HIGH_HALF(l)	   (((uint32_t)(l) >> 16) & 0x0000FFFF)
 #define DWORD_MAKE(b1, b2, b3, b4) (((uint32_t)(b1) << 24) |\
                                     ((uint32_t)(b2) << 16) |\
                                     ((uint32_t)(b3) <<  8) |\
@@ -70,7 +70,7 @@ typedef unsigned long   uhandle_t;
 #define S_FALSE			1
 #endif
 
-#define S_SECTIONEND	2
+#define S_SECTIONEND	        2
 #define S_COMMENT		3
 #define S_BLANK			4
 
@@ -83,24 +83,24 @@ typedef unsigned long   uhandle_t;
 #endif
 
 #define E_NOMEMORY 		-3
-#define E_ENDOFFILE 	-4
+#define E_ENDOFFILE 	        -4
 #define E_RANGE 		-5
 #if !defined (E_INVALIDARG)
-#define E_INVALIDARG 	-6
+#define E_INVALIDARG 	        -6
 #endif
-#define E_FILENOTFOUND 	-7
+#define E_FILENOTFOUND 	        -7
 #define E_MATCH 		-8
-#define E_BADCMDARG 	-9
-#define E_NOBUFFSPACE 	-10
-#define E_DUPLICATE_SEC	-11
-#define E_DUPLICATE_KEY	-12
-#define E_NOTFOUND      -13
-#define E_TIMEOUT       -14
-#define E_PROTOCOL      -15
-#define E_DISCONNECT    -16
+#define E_BADCMDARG 	        -9
+#define E_NOBUFFSPACE 	        -10
+#define E_DUPLICATE_SEC	        -11
+#define E_DUPLICATE_KEY	        -12
+#define E_NOTFOUND              -13
+#define E_TIMEOUT               -14
+#define E_PROTOCOL              -15
+#define E_DISCONNECT            -16
 
 #if !defined(E_POINTER)
-#define E_POINTER       -15
+#define E_POINTER               -15
 #endif
 
 #if !defined(SUCCEEDED)
