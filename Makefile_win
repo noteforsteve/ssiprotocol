@@ -6,8 +6,8 @@ LFLAGS=/NOLOGO /DEBUG
 
 OBJS=common.obj\
 	debug.obj\
-    winuart.obj\
-    uart.obj\
+	winuart.obj\
+	uart.obj\
 	portable.obj\
 	ssiprotocol.obj\
 	main.obj\
@@ -36,7 +36,7 @@ ssiprotocol.obj : ssiprotocol.h ssiprotocol.c
 	$(CC) $(CFLAGS) ssiprotocol.c
 
 ssiprotocol.exe : $(OBJS)
-    $(LINK) $(LFLAGS) $** /OUT:$@
+	$(LINK) $(LFLAGS) $** /OUT:$@
 
 clean:
     del *.exe *.obj *.ilk *.manifest *.pdb *.suo
